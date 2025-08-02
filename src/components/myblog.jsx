@@ -13,7 +13,7 @@ const {auth}=useContext(AuthContext)
     
     const fetchdatabuId=async()=>{
       try{
-       const response=await axios.get(`http://localhost:7878/blog/myblogs`,{
+       const response=await axios.get(`${import.meta.env.VITE_API_URL}/blog/myblogs`,{
         headers:{
           'authorization':`Bearer ${auth.token}`
         }

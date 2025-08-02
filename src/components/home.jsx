@@ -11,7 +11,9 @@ const [blogdata,setBlogdata]=useState([])
 useEffect(()=>{
   const getblogData=async()=>{
     try{
-    const response=await axios.get('http://localhost:7878/blog/getallblogs')
+    // const response=await axios.get('http://localhost:7878/blog/getallblogs')
+
+    const response=await axios.get(`${import.meta.env.VITE_API_URL}/blog/getallblogs`)
     console.log(response.data)
     setBlogdata(response.data.data)
     }

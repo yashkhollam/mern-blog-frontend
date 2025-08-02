@@ -25,7 +25,7 @@ const handleinput=(e)=>{
 const submitdata=async(e)=>{
   e.preventDefault()
   try{
-      const response=await axios.post("http://localhost:7878/auth/login",input)
+      const response=await axios.post(`${import.meta.env.VITE_API_URL}/auth/login`,input)
 
   const result=response.data
   const{message,username,jwttoken}=result

@@ -25,7 +25,7 @@ function Signup() {
   const submitdata=async(e)=>{
   e.preventDefault();
    try{
-    const response=await axios.post("http://localhost:7878/auth/signup",input)
+    const response=await axios.post(`${import.meta.env.VITE_API_URL}/auth/signup`,input)
 
     toast.success("Signup Successfully")
      setInput({username: "",email: "",password: ""})

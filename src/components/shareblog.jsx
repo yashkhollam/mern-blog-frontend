@@ -41,7 +41,7 @@ const data={title:"",category:"",description:"",image:""}
   alert("Please select an image before submitting.");
   return;
 }
-        const response=await axios.post("http://localhost:7878/blog/createblog",formdata,{
+        const response=await axios.post(`${import.meta.env.VITE_API_URL}/blog/createblog`,formdata,{
           headers:{
             "Content-Type":"multipart/form-data",
             'authorization':`Bearer ${auth.token}`
