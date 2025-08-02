@@ -1,0 +1,70 @@
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+
+#container1{
+   
+    
+    min-height:100vh;
+    padding-top:90px;
+    display: flex;
+    justify-content: center;
+    
+   
+}
+
+#form{
+    height:500px;
+   
+}
+
+#data{
+    display: flex;
+    justify-content: space-between;
+    margin-top:30px;
+    gap:0px; 
+      
+
+}
+
+#inputtext{
+   width:700px;
+   margin-right: 0px;
+ 
+
+}
+
+
+#postbtn-container{
+    margin-top: 40px;
+}
+
+#postbtn{
+   width:130px;
+   background-color:rgb(98, 98, 233); 
+   font-size: 1.4rem;  
+   color: white;
+   padding:10px;
+}
+
+
+@media only  screen and (max-width:884px) {
+  
+  
+#data{
+    display: flex;
+    flex-direction: column;
+    margin-top:15px;
+    gap:0px; 
+      
+
+}
+  
+    #inputtext{
+   width:100%;
+   margin-right: 0px;
+
+}  
+}

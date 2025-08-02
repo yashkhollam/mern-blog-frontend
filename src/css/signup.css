@@ -1,0 +1,38 @@
+/* #forms{
+    border: 1px solid black !important;
+    width:200px
+};
+
+#col1{
+    width:400px !important;
+} */
+
+
+/* 
+.form-container {
+  min-height: 100%;
+}
+
+/* Optional: Add height control to image side too */
+/* .bg-danger {
+  min-height: 500px;
+} */
+
+/* Responsive tweak for smaller screens 
+@media (max-width: 768px) {
+  .bg-danger, .form-container {
+    min-height: auto;
+  }
+} */
+
+
+#label{
+  font-size:1.2rem;
+}
+
+#form-image{
+  width:100%;
+  object-fit:cover;
+ 
+}
+
